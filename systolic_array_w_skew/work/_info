@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/NPU_project/systolic_array_w_skew
+vmac_pe
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1778586264
+!i10b 1
+!s100 WDFFh]_5oSAlBVTPNcHHJ2
+IzzP@@_RYL3?GoJi0jXAZ@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mac_pe_sv_unit
+S1
+R0
+w1778585263
+8mac_pe.sv
+Fmac_pe.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1778586264.000000
+Z6 !s107 tb_systolic_controller.sv|systolic_controller.sv|systolic_array_2d.sv|pe_systolic_cell.sv|mac_pe.sv|
+Z7 !s90 -reportprogress|300|-sv|mac_pe.sv|pe_systolic_cell.sv|systolic_array_2d.sv|systolic_controller.sv|tb_systolic_controller.sv|+acc|
+!i113 1
+Z8 o-sv +acc
+Z9 tCvgOpt 0
+vpe_systolic_cell
+R1
+R2
+!i10b 1
+!s100 E`^YHanOk;Yec:=5oaRed0
+I::=dXW^l7D6b;bMNP3]:]1
+R3
+!s105 pe_systolic_cell_sv_unit
+S1
+R0
+w1778585265
+8pe_systolic_cell.sv
+Fpe_systolic_cell.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vsystolic_array_2d
+R1
+R2
+!i10b 1
+!s100 XX04RBoEbI4MH2VgScjLY1
+IzZ<6=>^1amAVcB[dgP2mT2
+R3
+!s105 systolic_array_2d_sv_unit
+S1
+R0
+w1778585266
+8systolic_array_2d.sv
+Fsystolic_array_2d.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vsystolic_controller
+R1
+R2
+!i10b 1
+!s100 cWl`L>Um22EWnFOnG:[Yc0
+IloVaT`3eVLfnJkW`5@X3Y1
+R3
+!s105 systolic_controller_sv_unit
+S1
+R0
+w1778585268
+8systolic_controller.sv
+Fsystolic_controller.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_systolic_controller
+R1
+R2
+!i10b 1
+!s100 DC[ZRkaEOodTAOT1o=2jN0
+Ik=eU_BnzQQf8[m8fdBo]E1
+R3
+!s105 tb_systolic_controller_sv_unit
+S1
+R0
+w1778585269
+8tb_systolic_controller.sv
+Ftb_systolic_controller.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

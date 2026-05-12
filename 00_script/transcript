@@ -1,0 +1,16 @@
+# do sim.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:46:44 on Apr 06,2026
+# vlog -novopt test_000.v 000.v 
+# ** Error: (vlog-7) Failed to open design unit file "test_000.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 20:46:44 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: F:/ModelSim/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim.do line 5
+# F:/ModelSim/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -novopt test_000.v 000.v"

@@ -1,0 +1,20 @@
+vlib work
+vmap work work
+vlog test_dut.v dut.v +acc
+vsim work.test_dut
+add wave * 
+run 35ps
+force b 0
+run 2ps
+if {[expr [examine -decimal y] != 0]} {
+  echo "!!! Error. y is [examine y]."
+} else {
+  echo  OK. y is [examine y]."
+}
+
+
+System verilog
+vlib work
+vmap work work
+vlog -sv test_dut.sv dut.sv +acc
+vsim work.test_dut

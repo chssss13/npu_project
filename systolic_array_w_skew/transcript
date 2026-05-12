@@ -1,0 +1,137 @@
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:24 on May 12,2026
+# vlog -reportprogress 300 -sv mac_pe.sv pe_systolic_cell.sv systolic_array_2d.sv systolic_controller.sv tb_systolic_controller.sv "+acc" 
+# -- Compiling module mac_pe
+# -- Compiling module pe_systolic_cell
+# -- Compiling module systolic_array_2d
+# -- Compiling module systolic_controller
+# ** Warning: systolic_controller.sv(108): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: systolic_controller.sv(112): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: systolic_controller.sv(114): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: systolic_controller.sv(123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: systolic_controller.sv(127): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: systolic_controller.sv(129): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Note: (vlog-143) Recognized 1 FSM in module "systolic_controller(verilog)".
+# -- Compiling module tb_systolic_controller
+# 
+# Top level modules:
+# 	tb_systolic_controller
+# End time: 20:44:24 on May 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vsim work.tb_systolic_controller 
+# Start time: 20:44:24 on May 12,2026
+# Loading sv_std.std
+# Loading work.tb_systolic_controller
+# Loading work.systolic_controller
+# Loading work.systolic_array_2d
+# Loading work.pe_systolic_cell
+# Loading work.mac_pe
+# === Controller-based Verification Start ===
+# --------------------------------------------------
+# [Iter 0] Checking Result...
+# PASS! at [0][0]: DUT=128, REF=128
+# PASS! at [0][1]: DUT=97, REF=97
+# PASS! at [1][0]: DUT=168, REF=168
+# PASS! at [1][1]: DUT=132, REF=132
+# [Iter 0] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 1] Checking Result...
+# PASS! at [0][0]: DUT=108, REF=108
+# PASS! at [0][1]: DUT=45, REF=45
+# PASS! at [1][0]: DUT=140, REF=140
+# PASS! at [1][1]: DUT=71, REF=71
+# [Iter 1] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 2] Checking Result...
+# PASS! at [0][0]: DUT=232, REF=232
+# PASS! at [0][1]: DUT=66, REF=66
+# PASS! at [1][0]: DUT=42, REF=42
+# PASS! at [1][1]: DUT=28, REF=28
+# [Iter 2] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 3] Checking Result...
+# PASS! at [0][0]: DUT=259, REF=259
+# PASS! at [0][1]: DUT=339, REF=339
+# PASS! at [1][0]: DUT=133, REF=133
+# PASS! at [1][1]: DUT=249, REF=249
+# [Iter 3] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 4] Checking Result...
+# PASS! at [0][0]: DUT=32, REF=32
+# PASS! at [0][1]: DUT=184, REF=184
+# PASS! at [1][0]: DUT=38, REF=38
+# PASS! at [1][1]: DUT=219, REF=219
+# [Iter 4] FINAL RESULT: PASS!
+# --------------------------------------------------
+# === All Tests Finished ===
+# ** Note: $finish    : tb_systolic_controller.sv(115)
+#    Time: 615 ns  Iteration: 1  Instance: /tb_systolic_controller
+# 1
+# Break in Module tb_systolic_controller at tb_systolic_controller.sv line 115
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position 7  sim:/tb_systolic_controller/dut/i_mat_a
+add wave -position 8  sim:/tb_systolic_controller/dut/i_mat_b
+add wave -position 9  sim:/tb_systolic_controller/dut/o_mat_c
+add wave -position 10  sim:/tb_systolic_controller/dut/latched_mat_a
+add wave -position 11  sim:/tb_systolic_controller/dut/latched_mat_b
+add wave -position 12  sim:/tb_systolic_controller/dut/array_a_in
+add wave -position 13  sim:/tb_systolic_controller/dut/array_b_in
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+run -all
+# === Controller-based Verification Start ===
+# --------------------------------------------------
+# [Iter 0] Checking Result...
+# PASS! at [0][0]: DUT=128, REF=128
+# PASS! at [0][1]: DUT=97, REF=97
+# PASS! at [1][0]: DUT=168, REF=168
+# PASS! at [1][1]: DUT=132, REF=132
+# [Iter 0] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 1] Checking Result...
+# PASS! at [0][0]: DUT=108, REF=108
+# PASS! at [0][1]: DUT=45, REF=45
+# PASS! at [1][0]: DUT=140, REF=140
+# PASS! at [1][1]: DUT=71, REF=71
+# [Iter 1] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 2] Checking Result...
+# PASS! at [0][0]: DUT=232, REF=232
+# PASS! at [0][1]: DUT=66, REF=66
+# PASS! at [1][0]: DUT=42, REF=42
+# PASS! at [1][1]: DUT=28, REF=28
+# [Iter 2] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 3] Checking Result...
+# PASS! at [0][0]: DUT=259, REF=259
+# PASS! at [0][1]: DUT=339, REF=339
+# PASS! at [1][0]: DUT=133, REF=133
+# PASS! at [1][1]: DUT=249, REF=249
+# [Iter 3] FINAL RESULT: PASS!
+# --------------------------------------------------
+# --------------------------------------------------
+# [Iter 4] Checking Result...
+# PASS! at [0][0]: DUT=32, REF=32
+# PASS! at [0][1]: DUT=184, REF=184
+# PASS! at [1][0]: DUT=38, REF=38
+# PASS! at [1][1]: DUT=219, REF=219
+# [Iter 4] FINAL RESULT: PASS!
+# --------------------------------------------------
+# === All Tests Finished ===
+# ** Note: $finish    : tb_systolic_controller.sv(115)
+#    Time: 615 ns  Iteration: 1  Instance: /tb_systolic_controller
+# 1
+# Break in Module tb_systolic_controller at tb_systolic_controller.sv line 115
