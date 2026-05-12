@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/Arty_Z7/ip/Arty_Z7_axi_dma_0_0/sim/Arty_Z7_axi_dma_0_0.vhd" \
+"../../../bd/Arty_Z7/ip/Arty_Z7_axi_smc_0/bd_0/ip/ip_1/sim/bd_f994_psr_aclk_0.vhd" \
+"../../../bd/Arty_Z7/ip/Arty_Z7_proc_sys_reset_0_0/sim/Arty_Z7_proc_sys_reset_0_0.vhd" \
+
+# Do not sort compile order
+nosort

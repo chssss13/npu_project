@@ -1,0 +1,4 @@
+set_property SRC_FILE_INFO {cfile:c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ip/Arty_Z7_proc_sys_reset_0_0/Arty_Z7_proc_sys_reset_0_0.xdc rfile:../../../CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ip/Arty_Z7_proc_sys_reset_0_0/Arty_Z7_proc_sys_reset_0_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+current_instance U0
+set_property src_info {type:SCOPED_XDC file:1 line:50 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -type CDC -id {CDC-11} -user "proc_sys_reset" -desc "Timing uncritical paths" -tags "1171415" -scope -internal -to [get_pins -quiet -filter REF_PIN_NAME=~*D -of_objects [get_cells -hierarchical -filter {NAME =~ */ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to}]]

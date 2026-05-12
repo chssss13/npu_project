@@ -1,0 +1,29 @@
+# vsim work.tb_systolic_array_2d 
+# Start time: 20:14:23 on May 06,2026
+# Loading sv_std.std
+# Loading work.tb_systolic_array_2d
+# Loading work.systolic_array_2d
+# Loading work.pe_systolic_cell
+# Loading work.mac_pe
+add wave *
+add wave -group mul mac_pe.sv
+# (vish-4014) No objects found matching 'mac_pe.sv'.
+add wave -group mul C:/NPU_project/2x2_systolic_array/mac_pe.sv
+# Unrecognized dataset prefix: C
+add wave -group mul /tb_systolic_array_2d/mac_pe
+# (vish-4014) No objects found matching '/tb_systolic_array_2d/mac_pe'.
+add wave -position end sim:/tb_systolic_array_2d/dut/*
+add wave -position end  sim:/tb_systolic_array_2d/dut/a_in_row
+add wave -position end  sim:/tb_systolic_array_2d/dut/b_in_col
+add wave -position end  sim:/tb_systolic_array_2d/dut/pe_mul
+add wave -position end  sim:/tb_systolic_array_2d/dut/pe_acc_sum
+add wave -position end  sim:/tb_systolic_array_2d/dut/a_sig
+add wave -position end  sim:/tb_systolic_array_2d/dut/b_sig
+add wave -position end  sim:/tb_systolic_array_2d/dut/a_conn
+add wave -position end  sim:/tb_systolic_array_2d/dut/b_conn
+add wave -position end {sim:/tb_systolic_array_2d/dut/G_ROW[1]/*}
+# (vish-4014) No objects found matching '/tb_systolic_array_2d/dut/G_ROW[1]/*'.
+add wave -position end {sim:/tb_systolic_array_2d/dut/G_ROW[1]/*}
+# (vish-4014) No objects found matching '/tb_systolic_array_2d/dut/G_ROW[1]/*'.
+run 60000
+# === [Step 3.5] Random Verification Start (10 Iterations) ===

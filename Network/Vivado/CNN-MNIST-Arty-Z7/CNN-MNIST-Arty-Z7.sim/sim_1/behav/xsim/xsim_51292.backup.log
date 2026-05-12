@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar 24 16:57:07 2026
+# Process ID: 51292
+# Current directory: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim
+# Command line: xsim.exe -mode tcl -source {xsim.dir/top_sim_sim/xsim_script.tcl}
+# Log file: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim/xsim.log
+# Journal file: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim\xsim.jou
+# Running On: BOOK-5BUKIBNBT7, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 8, Host memory: 33834 MB
+#-----------------------------------------------------------
+source xsim.dir/top_sim_sim/xsim_script.tcl
+# xsim {top_sim_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: File w_1_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_10.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_10.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_11.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_11.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_12.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_12.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_13.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_13.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_14.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_14.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_15.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_15.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_16.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_16.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_17.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_17.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_18.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_18.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_19.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_19.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_20.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_20.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_21.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_21.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_22.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_22.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_23.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_23.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_24.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_24.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_25.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_25.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_26.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_26.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_27.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_27.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_28.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_28.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_1_29.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_1_29.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_10.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_10.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_11.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_11.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_12.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_12.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_13.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_13.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_14.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_14.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_15.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_15.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_16.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_16.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_17.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_17.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_18.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_18.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_2_19.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_2_19.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_0.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_1.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_2.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_3.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_4.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_5.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_6.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_7.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_8.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File w_3_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sigContent.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File b_3_9.mif referenced on C:/Network/Vivado/src/fpga/rtl/neuron.v at line 82 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+Configuration completed                      0 ns
+Filename:     test_data_0000.txt
+1. Accuracy: 0.000000, Detected number: 0, Expected: 07
+Filename:     test_data_0001.txt
+2. Accuracy: 0.000000, Detected number: 0, Expected: 02
+Filename:     test_data_0002.txt
+3. Accuracy: 0.000000, Detected number: 0, Expected: 01
+Filename:     test_data_0003.txt
+4. Accuracy: 25.000000, Detected number: 0, Expected: 00
+Filename:     test_data_0004.txt
+5. Accuracy: 20.000000, Detected number: 0, Expected: 04
+Filename:     test_data_0005.txt
+6. Accuracy: 16.666667, Detected number: 0, Expected: 01
+Filename:     test_data_0006.txt
+7. Accuracy: 14.285714, Detected number: 0, Expected: 04
+Filename:     test_data_0007.txt
+8. Accuracy: 12.500000, Detected number: 0, Expected: 09
+Filename:     test_data_0008.txt
+9. Accuracy: 11.111111, Detected number: 0, Expected: 05
+Filename:     test_data_0009.txt
+10. Accuracy: 10.000000, Detected number: 0, Expected: 09
+Filename:     test_data_0010.txt
+11. Accuracy: 18.181818, Detected number: 0, Expected: 00
+Filename:     test_data_0011.txt
+12. Accuracy: 16.666667, Detected number: 0, Expected: 06
+Filename:     test_data_0012.txt
+13. Accuracy: 15.384615, Detected number: 0, Expected: 09
+Filename:     test_data_0013.txt
+14. Accuracy: 21.428571, Detected number: 0, Expected: 00
+Filename:     test_data_0014.txt
+15. Accuracy: 20.000000, Detected number: 0, Expected: 01
+Filename:     test_data_0015.txt
+16. Accuracy: 18.750000, Detected number: 0, Expected: 05
+Filename:     test_data_0016.txt
+17. Accuracy: 17.647059, Detected number: 0, Expected: 09
+Filename:     test_data_0017.txt
+18. Accuracy: 16.666667, Detected number: 0, Expected: 07
+Filename:     test_data_0018.txt
+19. Accuracy: 15.789474, Detected number: 0, Expected: 03
+Filename:     test_data_0019.txt
+20. Accuracy: 15.000000, Detected number: 0, Expected: 04
+Filename:     test_data_0020.txt
+21. Accuracy: 14.285714, Detected number: 0, Expected: 09
+Filename:     test_data_0021.txt
+22. Accuracy: 13.636364, Detected number: 0, Expected: 06
+Filename:     test_data_0022.txt
+23. Accuracy: 13.043478, Detected number: 0, Expected: 06
+Filename:     test_data_0023.txt
+24. Accuracy: 12.500000, Detected number: 0, Expected: 05
+Filename:     test_data_0024.txt
+25. Accuracy: 12.000000, Detected number: 0, Expected: 04
+Filename:     test_data_0025.txt
+26. Accuracy: 15.384615, Detected number: 0, Expected: 00
+Filename:     test_data_0026.txt
+27. Accuracy: 14.814815, Detected number: 0, Expected: 07
+Filename:     test_data_0027.txt
+28. Accuracy: 14.285714, Detected number: 0, Expected: 04
+Filename:     test_data_0028.txt
+29. Accuracy: 17.241379, Detected number: 0, Expected: 00
+Filename:     test_data_0029.txt
+30. Accuracy: 16.666667, Detected number: 0, Expected: 01
+Filename:     test_data_0030.txt
+31. Accuracy: 16.129032, Detected number: 0, Expected: 03
+Filename:     test_data_0031.txt
+32. Accuracy: 15.625000, Detected number: 0, Expected: 01
+Filename:     test_data_0032.txt
+33. Accuracy: 15.151515, Detected number: 0, Expected: 03
+Filename:     test_data_0033.txt
+34. Accuracy: 14.705882, Detected number: 0, Expected: 04
+Filename:     test_data_0034.txt
+35. Accuracy: 14.285714, Detected number: 0, Expected: 07
+Filename:     test_data_0035.txt
+36. Accuracy: 13.888889, Detected number: 0, Expected: 02
+Filename:     test_data_0036.txt
+37. Accuracy: 13.513514, Detected number: 0, Expected: 07
+Filename:     test_data_0037.txt
+38. Accuracy: 13.157895, Detected number: 0, Expected: 01
+Filename:     test_data_0038.txt
+39. Accuracy: 12.820513, Detected number: 0, Expected: 02
+Filename:     test_data_0039.txt
+40. Accuracy: 12.500000, Detected number: 0, Expected: 01
+Filename:     test_data_0040.txt
+41. Accuracy: 12.195122, Detected number: 0, Expected: 01
+Filename:     test_data_0041.txt
+42. Accuracy: 11.904762, Detected number: 0, Expected: 07
+Filename:     test_data_0042.txt
+43. Accuracy: 11.627907, Detected number: 0, Expected: 04
+Filename:     test_data_0043.txt
+44. Accuracy: 11.363636, Detected number: 0, Expected: 02
+Filename:     test_data_0044.txt
+45. Accuracy: 11.111111, Detected number: 0, Expected: 03
+Filename:     test_data_0045.txt
+46. Accuracy: 10.869565, Detected number: 0, Expected: 05
+Filename:     test_data_0046.txt
+47. Accuracy: 10.638298, Detected number: 0, Expected: 01
+Filename:     test_data_0047.txt
+48. Accuracy: 10.416667, Detected number: 0, Expected: 02
+Filename:     test_data_0048.txt
+49. Accuracy: 10.204082, Detected number: 0, Expected: 04
+Filename:     test_data_0049.txt
+50. Accuracy: 10.000000, Detected number: 0, Expected: 04
+Filename:     test_data_0050.txt
+51. Accuracy: 9.803922, Detected number: 0, Expected: 06
+Filename:     test_data_0051.txt
+52. Accuracy: 9.615385, Detected number: 0, Expected: 03
+Filename:     test_data_0052.txt
+53. Accuracy: 9.433962, Detected number: 0, Expected: 05
+Filename:     test_data_0053.txt
+54. Accuracy: 9.259259, Detected number: 0, Expected: 05
+Filename:     test_data_0054.txt
+55. Accuracy: 9.090909, Detected number: 0, Expected: 06
+Filename:     test_data_0055.txt
+56. Accuracy: 10.714286, Detected number: 0, Expected: 00
+Filename:     test_data_0056.txt
+57. Accuracy: 10.526316, Detected number: 0, Expected: 04
+Filename:     test_data_0057.txt
+58. Accuracy: 10.344828, Detected number: 0, Expected: 01
+Filename:     test_data_0058.txt
+59. Accuracy: 10.169492, Detected number: 0, Expected: 09
+Filename:     test_data_0059.txt
+60. Accuracy: 10.000000, Detected number: 0, Expected: 05
+Filename:     test_data_0060.txt
+61. Accuracy: 9.836066, Detected number: 0, Expected: 07
+Filename:     test_data_0061.txt
+62. Accuracy: 9.677419, Detected number: 0, Expected: 08
+Filename:     test_data_0062.txt
+63. Accuracy: 9.523810, Detected number: 0, Expected: 09
+Filename:     test_data_0063.txt
+64. Accuracy: 9.375000, Detected number: 0, Expected: 03
+Filename:     test_data_0064.txt
+65. Accuracy: 9.230769, Detected number: 0, Expected: 07
+Filename:     test_data_0065.txt
+66. Accuracy: 9.090909, Detected number: 0, Expected: 04
+Filename:     test_data_0066.txt
+67. Accuracy: 8.955224, Detected number: 0, Expected: 06
+Filename:     test_data_0067.txt
+68. Accuracy: 8.823529, Detected number: 0, Expected: 04
+Filename:     test_data_0068.txt
+69. Accuracy: 8.695652, Detected number: 0, Expected: 03
+Filename:     test_data_0069.txt
+70. Accuracy: 10.000000, Detected number: 0, Expected: 00
+Filename:     test_data_0070.txt
+71. Accuracy: 9.859155, Detected number: 0, Expected: 07
+Filename:     test_data_0071.txt
+72. Accuracy: 11.111111, Detected number: 0, Expected: 00
+Filename:     test_data_0072.txt
+73. Accuracy: 10.958904, Detected number: 0, Expected: 02
+Filename:     test_data_0073.txt
+74. Accuracy: 10.810811, Detected number: 0, Expected: 09
+Filename:     test_data_0074.txt
+75. Accuracy: 10.666667, Detected number: 0, Expected: 01
+Filename:     test_data_0075.txt
+76. Accuracy: 10.526316, Detected number: 0, Expected: 07
+Filename:     test_data_0076.txt
+77. Accuracy: 10.389610, Detected number: 0, Expected: 03
+Filename:     test_data_0077.txt
+78. Accuracy: 10.256410, Detected number: 0, Expected: 02
+Filename:     test_data_0078.txt
+79. Accuracy: 10.126582, Detected number: 0, Expected: 09
+Filename:     test_data_0079.txt
+80. Accuracy: 10.000000, Detected number: 0, Expected: 07
+Filename:     test_data_0080.txt
+81. Accuracy: 9.876543, Detected number: 0, Expected: 07
+Filename:     test_data_0081.txt
+82. Accuracy: 9.756098, Detected number: 0, Expected: 06
+Filename:     test_data_0082.txt
+83. Accuracy: 9.638554, Detected number: 0, Expected: 02
+Filename:     test_data_0083.txt
+84. Accuracy: 9.523810, Detected number: 0, Expected: 07
+Filename:     test_data_0084.txt
+85. Accuracy: 9.411765, Detected number: 0, Expected: 08
+Filename:     test_data_0085.txt
+86. Accuracy: 9.302326, Detected number: 0, Expected: 04
+Filename:     test_data_0086.txt
+87. Accuracy: 9.195402, Detected number: 0, Expected: 07
+Filename:     test_data_0087.txt
+88. Accuracy: 9.090909, Detected number: 0, Expected: 03
+Filename:     test_data_0088.txt
+89. Accuracy: 8.988764, Detected number: 0, Expected: 06
+Filename:     test_data_0089.txt
+90. Accuracy: 8.888889, Detected number: 0, Expected: 01
+Filename:     test_data_0090.txt
+91. Accuracy: 8.791209, Detected number: 0, Expected: 03
+Filename:     test_data_0091.txt
+92. Accuracy: 8.695652, Detected number: 0, Expected: 06
+Filename:     test_data_0092.txt
+93. Accuracy: 8.602151, Detected number: 0, Expected: 09
+Filename:     test_data_0093.txt
+94. Accuracy: 8.510638, Detected number: 0, Expected: 03
+Filename:     test_data_0094.txt
+95. Accuracy: 8.421053, Detected number: 0, Expected: 01
+Filename:     test_data_0095.txt
+96. Accuracy: 8.333333, Detected number: 0, Expected: 04
+Filename:     test_data_0096.txt
+97. Accuracy: 8.247423, Detected number: 0, Expected: 01
+Filename:     test_data_0097.txt
+98. Accuracy: 8.163265, Detected number: 0, Expected: 07
+Filename:     test_data_0098.txt
+99. Accuracy: 8.080808, Detected number: 0, Expected: 06
+Filename:     test_data_0099.txt
+100. Accuracy: 8.000000, Detected number: 0, Expected: 09
+Accuracy: 8.000000
+$stop called at time : 873235 ns : File "C:/Network/Vivado/src/fpga/tb/top_sim.v" Line 364
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Mar 24 16:57:12 2026...

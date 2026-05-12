@@ -1,0 +1,1246 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Mar 18 22:03:19 2026
+# Process ID: 34648
+# Current directory: C:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.runs/Arty_Z7_zyNet_0_0_synth_1
+# Command line: vivado.exe -log Arty_Z7_zyNet_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Arty_Z7_zyNet_0_0.tcl
+# Log file: C:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.runs/Arty_Z7_zyNet_0_0_synth_1/Arty_Z7_zyNet_0_0.vds
+# Journal file: C:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.runs/Arty_Z7_zyNet_0_0_synth_1\vivado.jou
+# Running On: BOOK-5BUKIBNBT7, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 8, Host memory: 33834 MB
+#-----------------------------------------------------------
+source Arty_Z7_zyNet_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 473.672 ; gain = 179.039
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Arty_Z7_zyNet_0_0
+Command: synth_design -top Arty_Z7_zyNet_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34788
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1347.629 ; gain = 439.398
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'addressWidth' becomes localparam in 'neuron' with formal parameter declaration list [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Arty_Z7_zyNet_0_0' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ip/Arty_Z7_zyNet_0_0/synth/Arty_Z7_zyNet_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'zyNet' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_wrapper' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/axi_lite_wrapper.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/axi_lite_wrapper.v:260]
+INFO: [Synth 8-226] default block is never used [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/axi_lite_wrapper.v:389]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_wrapper' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/axi_lite_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Layer_1' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Layer_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_0.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Sig_ROM' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Sig_ROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'sigContent.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Sig_ROM.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Sig_ROM' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Sig_ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_0.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized0' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_1.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized0' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_1.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized0' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized0' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized0' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized1' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_2.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized1' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_2.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized1' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized1' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized1' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized2' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_3.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized2' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_3.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized2' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized2' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized2' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized3' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_4.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized3' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_4.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized3' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized3' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized3' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized4' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_5.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized4' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_5.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized4' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized4' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized4' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized5' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_6.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized5' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_6.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized5' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized5' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized5' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized6' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_7.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized6' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_7.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized6' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized6' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized6' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized7' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_8.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized7' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_8.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized7' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized7' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized7' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized8' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_9.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized8' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_9.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized8' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized8' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized8' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized9' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_10.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized9' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_10.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized9' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized9' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized9' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized10' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_11.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized10' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_11.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized10' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized10' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized10' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized11' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_12.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized11' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_12.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized11' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized11' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized11' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized12' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_13.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized12' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_13.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized12' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized12' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized12' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized13' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_14.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized13' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_14.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized13' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized13' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized13' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized14' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_15.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized14' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_15.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized14' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized14' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized14' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized15' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_16.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized15' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_16.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized15' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized15' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized15' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized16' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_17.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized16' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_17.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized16' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized16' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized16' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized17' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_18.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized17' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_18.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized17' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized17' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized17' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized18' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_19.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized18' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_19.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized18' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized18' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized18' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized19' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_20.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized19' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_20.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized19' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized19' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized19' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized20' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_21.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized20' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_21.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized20' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized20' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized20' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized21' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_22.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized21' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_22.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized21' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized21' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized21' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized22' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_23.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized22' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_23.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized22' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized22' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized22' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized23' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_24.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized23' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_24.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized23' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized23' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized23' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized24' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_25.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized24' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_25.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized24' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized24' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized24' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized25' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_26.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized25' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_26.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized25' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized25' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized25' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized26' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_27.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized26' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_27.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized26' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized26' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized26' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized27' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_28.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized27' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_28.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized27' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized27' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized27' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized28' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_1_29.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized28' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_1_29.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized28' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'radd' does not match port width (10) of module 'Weight_Memory__parameterized28' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized28' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Layer_1' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Layer_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Layer_2' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Layer_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized29' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_0.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized29' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_0.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized29' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized29' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized29' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized30' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_1.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized30' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_1.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized30' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized30' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized30' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized31' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_2.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized31' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_2.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized31' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized31' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized31' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized32' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_3.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized32' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_3.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized32' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized32' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized32' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized33' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_4.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized33' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_4.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized33' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized33' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized33' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized34' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_5.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized34' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_5.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized34' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized34' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized34' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized35' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_6.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized35' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_6.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized35' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized35' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized35' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized36' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_7.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized36' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_7.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized36' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized36' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized36' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized37' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_8.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized37' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_8.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized37' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized37' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized37' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized38' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_9.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized38' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_9.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized38' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized38' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized38' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized39' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_10.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized39' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_10.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized39' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized39' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized39' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized40' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_11.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized40' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_11.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized40' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized40' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized40' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized41' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_12.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized41' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_12.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized41' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized41' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized41' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized42' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_13.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized42' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_13.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized42' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized42' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized42' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized43' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_14.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized43' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_14.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized43' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized43' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized43' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized44' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_15.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized44' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Synth 8-3876] $readmem data file 'w_2_15.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized44' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized44' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized44' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized45' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_16.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-6157] synthesizing module 'Weight_Memory__parameterized45' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3876] $readmem data file 'w_2_16.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized45' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized45' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized45' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_17.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-3876] $readmem data file 'w_2_17.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized46' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized46' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized46' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:24]
+INFO: [Synth 8-3876] $readmem data file 'b_2_18.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Synth 8-3876] $readmem data file 'w_2_18.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'Weight_Memory__parameterized47' (0#1) [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/Weight_Memory.v:23]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized47' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+INFO: [Synth 8-3876] $readmem data file 'b_2_19.mif' is read successfully [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:87]
+INFO: [Common 17-14] Message 'Synth 8-3876' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized48' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized49' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized50' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized51' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized52' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized53' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized54' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized55' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized56' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized57' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (6) of port connection 'radd' does not match port width (5) of module 'Weight_Memory__parameterized58' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/neuron.v:172]
+WARNING: [Synth 8-689] width (10) of port connection 'i_valid' does not match port width (1) of module 'maxFinder' [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:318]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/axi_lite_wrapper.v:250]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM's read address port stuck at constant. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element state_3_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:269]
+WARNING: [Synth 8-6014] Unused sequential element count_3_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:270]
+WARNING: [Synth 8-6014] Unused sequential element data_out_valid_3_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:271]
+WARNING: [Synth 8-6014] Unused sequential element holdData_3_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:281]
+WARNING: [Synth 8-6014] Unused sequential element out_data_3_reg was removed.  [c:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.gen/sources_1/bd/Arty_Z7/ipshared/62cb/rtl/zynet.v:286]
+WARNING: [Synth 8-7129] Port wen in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[4] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[3] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[2] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[1] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[0] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[7] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[6] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[5] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[4] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[3] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[2] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[1] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[0] in module Weight_Memory__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValid in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[31] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[30] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[29] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[28] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[27] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[26] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[25] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[24] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[23] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[22] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[21] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[20] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[19] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[18] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[17] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[16] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[15] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[14] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[13] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[12] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[11] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[10] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[9] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[8] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[31] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[30] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[29] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[28] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[27] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[26] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[25] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[24] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[23] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[22] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[21] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[20] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[19] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[18] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[17] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[16] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[15] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[14] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[13] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[12] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[11] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[10] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[9] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[8] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[7] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[6] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[5] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[4] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[3] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[2] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[1] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValue[0] in module neuron__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wen in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[4] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[3] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[2] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[1] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wadd[0] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[7] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[6] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[5] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[4] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[3] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[2] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[1] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port win[0] in module Weight_Memory__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port biasValid in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[31] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[30] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[29] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[28] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[27] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[26] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[25] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[24] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[23] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[22] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[21] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[20] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[19] in module neuron__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weightValue[18] in module neuron__parameterized57 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1547.418 ; gain = 639.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1547.418 ; gain = 639.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1547.418 ; gain = 639.188
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1547.418 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1648.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1652.559 ; gain = 4.273
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 60    
+	   2 Input   11 Bit       Adders := 30    
+	   2 Input   10 Bit       Adders := 150   
+	   2 Input    6 Bit       Adders := 30    
+	   2 Input    5 Bit       Adders := 30    
++---Registers : 
+	              240 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	               80 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 120   
+	               11 Bit    Registers := 30    
+	               10 Bit    Registers := 90    
+	                8 Bit    Registers := 193   
+	                7 Bit    Registers := 24    
+	                6 Bit    Registers := 39    
+	                5 Bit    Registers := 49    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 434   
++---ROMs : 
+	                    ROMs := 83    
++---Muxes : 
+	   2 Input  240 Bit        Muxes := 1     
+	   2 Input  160 Bit        Muxes := 1     
+	   2 Input   80 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 60    
+	   2 Input   16 Bit        Muxes := 300   
+	   2 Input   10 Bit        Muxes := 60    
+	 785 Input    8 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 80    
+	   6 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design Arty_Z7_zyNet_0_0 has port axis_in_data_ready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+-----------------------+---------------+----------------+
+|Module Name   | RTL Object            | Depth x Width | Implemented As | 
++--------------+-----------------------+---------------+----------------+
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x6          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x6          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x5          | LUT            | 
+|Weight_Memory | mem                   | 32x6          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x8          | LUT            | 
+|Weight_Memory | mem                   | 32x8          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x7          | LUT            | 
+|Weight_Memory | mem                   | 32x8          | LUT            | 
+|Layer_1       | n_1/r_addr_reg_rep    | 1024x6        | Block RAM      | 
+|Layer_1       | n_2/r_addr_reg_rep    | 1024x5        | Block RAM      | 
+|Layer_1       | n_3/r_addr_reg_rep    | 1024x5        | Block RAM      | 
+|Layer_1       | n_4/r_addr_reg_rep    | 1024x5        | Block RAM      | 
+|Layer_1       | n_5/r_addr_reg_rep    | 1024x5        | Block RAM      | 
+|Layer_1       | n_6/r_addr_reg_rep    | 1024x5        | Block RAM      | 
+|Layer_1       | n_10/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_11/r_addr_reg_rep   | 1024x7        | Block RAM      | 
+|Layer_1       | n_12/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_13/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_14/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_16/r_addr_reg_rep   | 1024x6        | Block RAM      | 
+|Layer_1       | n_17/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_18/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_19/r_addr_reg_rep   | 1024x6        | Block RAM      | 
+|Layer_1       | n_20/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_21/r_addr_reg_rep   | 1024x6        | Block RAM      | 
+|Layer_1       | n_22/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_23/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_25/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_27/r_addr_reg_rep   | 1024x5        | Block RAM      | 
+|Layer_1       | n_28/r_addr_reg_rep   | 1024x6        | Block RAM      | 
+|Layer_1       | n_29/r_addr_reg_rep   | 1024x6        | Block RAM      | 
+|Layer_1       | n_0/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_1/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_2/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_3/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_4/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_5/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_6/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_7/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_8/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_9/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_1       | n_10/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_11/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_12/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_13/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_14/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_15/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_16/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_17/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_18/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_19/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_20/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_21/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_22/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_23/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_24/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_25/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_26/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_27/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_28/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_1       | n_29/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x6          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x6          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x5          | LUT            | 
+|Layer_2       | p_0_out               | 32x6          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | p_0_out               | 32x7          | LUT            | 
+|Layer_2       | n_0/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_1/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_2/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_3/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_4/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_5/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_6/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_7/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_8/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_9/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_2       | n_10/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_11/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_12/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_13/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_14/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_15/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_16/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_17/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_18/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_2       | n_19/siginst.s1/y_reg | 1024x8        | Block RAM      | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x8          | LUT            | 
+|Layer_3       | p_0_out               | 32x8          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x7          | LUT            | 
+|Layer_3       | p_0_out               | 32x8          | LUT            | 
+|Layer_3       | n_0/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_1/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_2/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_3/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_4/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_5/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_6/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_7/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_8/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
+|Layer_3       | n_9/siginst.s1/y_reg  | 1024x8        | Block RAM      | 
++--------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 1652.559 ; gain = 744.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_10/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_10/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_12/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_12/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_14/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_14/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_16/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_16/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_18/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_18/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_20/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_20/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_22/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_22/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_24/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_24/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_26/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_26/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1/n_28/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_10/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_10/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_12/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_12/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_14/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_14/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_16/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_16/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2/n_18/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_0/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_2/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_4/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_6/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l3/n_8/siginst.s1/y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1673.215 ; gain = 764.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 1685.219 ; gain = 776.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1685.219 ; gain = 776.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.219 ; gain = 776.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.219 ; gain = 776.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.223 ; gain = 776.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.223 ; gain = 776.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   895|
+|2     |LUT1     |   389|
+|3     |LUT2     |  2183|
+|4     |LUT3     |   960|
+|5     |LUT4     |   946|
+|6     |LUT5     |   918|
+|7     |LUT6     |  3492|
+|8     |MUXF7    |   268|
+|9     |MUXF8    |   122|
+|10    |RAMB18E1 |    53|
+|35    |FDRE     |  3710|
+|36    |FDSE     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.223 ; gain = 776.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 331 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:09 . Memory (MB): peak = 1685.223 ; gain = 671.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1685.223 ; gain = 776.992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1697.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1338 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1700.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 688d226f
+INFO: [Common 17-83] Releasing license: Synthesis
+384 Infos, 229 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 1700.949 ; gain = 1211.898
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1700.949 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.runs/Arty_Z7_zyNet_0_0_synth_1/Arty_Z7_zyNet_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Arty_Z7_zyNet_0_0, cache-ID = f0e35a614d785565
+INFO: [Coretcl 2-1174] Renamed 133 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1700.949 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/NPU_project/CNN-Handwritten-Digit-MNIST-main/CNN-Handwritten-Digit-MNIST-main/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.runs/Arty_Z7_zyNet_0_0_synth_1/Arty_Z7_zyNet_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Arty_Z7_zyNet_0_0_utilization_synth.rpt -pb Arty_Z7_zyNet_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 22:04:54 2026...

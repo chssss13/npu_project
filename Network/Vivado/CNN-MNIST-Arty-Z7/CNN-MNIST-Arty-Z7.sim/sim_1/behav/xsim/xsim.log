@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar 24 17:06:02 2026
+# Process ID: 33268
+# Current directory: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim
+# Command line: xsim.exe -source {xsim.dir/top_sim_sim/xsim_script.tcl}
+# Log file: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim/xsim.log
+# Journal file: C:/Network/Vivado/CNN-MNIST-Arty-Z7/CNN-MNIST-Arty-Z7.sim/sim_1/behav/xsim\xsim.jou
+# Running On: BOOK-5BUKIBNBT7, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 8, Host memory: 33834 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/top_sim_sim/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.109 ; gain = 342.977
+# xsim {top_sim_sim} -autoloadwcfg
+Time resolution is 1 ps
+run all
+Configuration completed                      0 ns
+Filename:     test_data_0000.txt
+1. Accuracy: 100.000000, Detected number: 7, Expected: 07
+Filename:     test_data_0001.txt
+2. Accuracy: 100.000000, Detected number: 2, Expected: 02
+Filename:     test_data_0002.txt
+3. Accuracy: 100.000000, Detected number: 1, Expected: 01
+Filename:     test_data_0003.txt
+4. Accuracy: 100.000000, Detected number: 0, Expected: 00
+Filename:     test_data_0004.txt
+5. Accuracy: 100.000000, Detected number: 4, Expected: 04
+Filename:     test_data_0005.txt
+6. Accuracy: 100.000000, Detected number: 1, Expected: 01
+Filename:     test_data_0006.txt
+7. Accuracy: 100.000000, Detected number: 4, Expected: 04
+Filename:     test_data_0007.txt
+8. Accuracy: 100.000000, Detected number: 9, Expected: 09
+Filename:     test_data_0008.txt
+9. Accuracy: 100.000000, Detected number: 5, Expected: 05
+Filename:     test_data_0009.txt
+10. Accuracy: 100.000000, Detected number: 9, Expected: 09
+Filename:     test_data_0010.txt
+11. Accuracy: 100.000000, Detected number: 0, Expected: 00
+Filename:     test_data_0011.txt
+12. Accuracy: 100.000000, Detected number: 6, Expected: 06
+Filename:     test_data_0012.txt
+13. Accuracy: 100.000000, Detected number: 9, Expected: 09
+Filename:     test_data_0013.txt
+14. Accuracy: 100.000000, Detected number: 0, Expected: 00
+Filename:     test_data_0014.txt
+15. Accuracy: 100.000000, Detected number: 1, Expected: 01
+Filename:     test_data_0015.txt
+16. Accuracy: 100.000000, Detected number: 5, Expected: 05
+Filename:     test_data_0016.txt
+17. Accuracy: 100.000000, Detected number: 9, Expected: 09
+Filename:     test_data_0017.txt
+18. Accuracy: 100.000000, Detected number: 7, Expected: 07
+Filename:     test_data_0018.txt
+19. Accuracy: 94.736842, Detected number: 8, Expected: 03
+Filename:     test_data_0019.txt
+20. Accuracy: 95.000000, Detected number: 4, Expected: 04
+Filename:     test_data_0020.txt
+21. Accuracy: 95.238095, Detected number: 9, Expected: 09
+Filename:     test_data_0021.txt
+22. Accuracy: 95.454545, Detected number: 6, Expected: 06
+Filename:     test_data_0022.txt
+23. Accuracy: 95.652174, Detected number: 6, Expected: 06
+Filename:     test_data_0023.txt
+24. Accuracy: 95.833333, Detected number: 5, Expected: 05
+Filename:     test_data_0024.txt
+25. Accuracy: 96.000000, Detected number: 4, Expected: 04
+Filename:     test_data_0025.txt
+26. Accuracy: 96.153846, Detected number: 0, Expected: 00
+Filename:     test_data_0026.txt
+27. Accuracy: 96.296296, Detected number: 7, Expected: 07
+Filename:     test_data_0027.txt
+28. Accuracy: 96.428571, Detected number: 4, Expected: 04
+Filename:     test_data_0028.txt
+29. Accuracy: 96.551724, Detected number: 0, Expected: 00
+Filename:     test_data_0029.txt
+30. Accuracy: 96.666667, Detected number: 1, Expected: 01
+Filename:     test_data_0030.txt
+31. Accuracy: 96.774194, Detected number: 3, Expected: 03
+Filename:     test_data_0031.txt
+32. Accuracy: 96.875000, Detected number: 1, Expected: 01
+Filename:     test_data_0032.txt
+33. Accuracy: 96.969697, Detected number: 3, Expected: 03
+Filename:     test_data_0033.txt
+34. Accuracy: 97.058824, Detected number: 4, Expected: 04
+Filename:     test_data_0034.txt
+35. Accuracy: 97.142857, Detected number: 7, Expected: 07
+Filename:     test_data_0035.txt
+36. Accuracy: 97.222222, Detected number: 2, Expected: 02
+Filename:     test_data_0036.txt
+37. Accuracy: 97.297297, Detected number: 7, Expected: 07
+Filename:     test_data_0037.txt
+38. Accuracy: 97.368421, Detected number: 1, Expected: 01
+Filename:     test_data_0038.txt
+39. Accuracy: 97.435897, Detected number: 2, Expected: 02
+Filename:     test_data_0039.txt
+40. Accuracy: 97.500000, Detected number: 1, Expected: 01
+Filename:     test_data_0040.txt
+41. Accuracy: 97.560976, Detected number: 1, Expected: 01
+Filename:     test_data_0041.txt
+42. Accuracy: 97.619048, Detected number: 7, Expected: 07
+Filename:     test_data_0042.txt
+43. Accuracy: 97.674419, Detected number: 4, Expected: 04
+Filename:     test_data_0043.txt
+44. Accuracy: 97.727273, Detected number: 2, Expected: 02
+Filename:     test_data_0044.txt
+45. Accuracy: 97.777778, Detected number: 3, Expected: 03
+Filename:     test_data_0045.txt
+46. Accuracy: 97.826087, Detected number: 5, Expected: 05
+Filename:     test_data_0046.txt
+47. Accuracy: 97.872340, Detected number: 1, Expected: 01
+Filename:     test_data_0047.txt
+48. Accuracy: 97.916667, Detected number: 2, Expected: 02
+Filename:     test_data_0048.txt
+49. Accuracy: 97.959184, Detected number: 4, Expected: 04
+Filename:     test_data_0049.txt
+50. Accuracy: 98.000000, Detected number: 4, Expected: 04
+Filename:     test_data_0050.txt
+51. Accuracy: 98.039216, Detected number: 6, Expected: 06
+Filename:     test_data_0051.txt
+52. Accuracy: 98.076923, Detected number: 3, Expected: 03
+Filename:     test_data_0052.txt
+53. Accuracy: 98.113208, Detected number: 5, Expected: 05
+Filename:     test_data_0053.txt
+54. Accuracy: 98.148148, Detected number: 5, Expected: 05
+Filename:     test_data_0054.txt
+55. Accuracy: 98.181818, Detected number: 6, Expected: 06
+Filename:     test_data_0055.txt
+56. Accuracy: 98.214286, Detected number: 0, Expected: 00
+Filename:     test_data_0056.txt
+57. Accuracy: 98.245614, Detected number: 4, Expected: 04
+Filename:     test_data_0057.txt
+58. Accuracy: 98.275862, Detected number: 1, Expected: 01
+Filename:     test_data_0058.txt
+59. Accuracy: 98.305085, Detected number: 9, Expected: 09
+Filename:     test_data_0059.txt
+60. Accuracy: 98.333333, Detected number: 5, Expected: 05
+Filename:     test_data_0060.txt
+61. Accuracy: 98.360656, Detected number: 7, Expected: 07
+Filename:     test_data_0061.txt
+62. Accuracy: 98.387097, Detected number: 8, Expected: 08
+Filename:     test_data_0062.txt
+63. Accuracy: 98.412698, Detected number: 9, Expected: 09
+Filename:     test_data_0063.txt
+64. Accuracy: 98.437500, Detected number: 3, Expected: 03
+Filename:     test_data_0064.txt
+65. Accuracy: 98.461538, Detected number: 7, Expected: 07
+Filename:     test_data_0065.txt
+66. Accuracy: 98.484848, Detected number: 4, Expected: 04
+Filename:     test_data_0066.txt
+67. Accuracy: 98.507463, Detected number: 6, Expected: 06
+Filename:     test_data_0067.txt
+68. Accuracy: 98.529412, Detected number: 4, Expected: 04
+Filename:     test_data_0068.txt
+69. Accuracy: 98.550725, Detected number: 3, Expected: 03
+Filename:     test_data_0069.txt
+70. Accuracy: 98.571429, Detected number: 0, Expected: 00
+Filename:     test_data_0070.txt
+71. Accuracy: 98.591549, Detected number: 7, Expected: 07
+Filename:     test_data_0071.txt
+72. Accuracy: 98.611111, Detected number: 0, Expected: 00
+Filename:     test_data_0072.txt
+73. Accuracy: 98.630137, Detected number: 2, Expected: 02
+Filename:     test_data_0073.txt
+74. Accuracy: 98.648649, Detected number: 9, Expected: 09
+Filename:     test_data_0074.txt
+75. Accuracy: 98.666667, Detected number: 1, Expected: 01
+Filename:     test_data_0075.txt
+76. Accuracy: 98.684211, Detected number: 7, Expected: 07
+Filename:     test_data_0076.txt
+77. Accuracy: 98.701299, Detected number: 3, Expected: 03
+Filename:     test_data_0077.txt
+78. Accuracy: 98.717949, Detected number: 2, Expected: 02
+Filename:     test_data_0078.txt
+79. Accuracy: 98.734177, Detected number: 9, Expected: 09
+Filename:     test_data_0079.txt
+80. Accuracy: 98.750000, Detected number: 7, Expected: 07
+Filename:     test_data_0080.txt
+81. Accuracy: 98.765432, Detected number: 7, Expected: 07
+Filename:     test_data_0081.txt
+82. Accuracy: 98.780488, Detected number: 6, Expected: 06
+Filename:     test_data_0082.txt
+83. Accuracy: 98.795181, Detected number: 2, Expected: 02
+Filename:     test_data_0083.txt
+84. Accuracy: 98.809524, Detected number: 7, Expected: 07
+Filename:     test_data_0084.txt
+85. Accuracy: 98.823529, Detected number: 8, Expected: 08
+Filename:     test_data_0085.txt
+86. Accuracy: 98.837209, Detected number: 4, Expected: 04
+Filename:     test_data_0086.txt
+87. Accuracy: 98.850575, Detected number: 7, Expected: 07
+Filename:     test_data_0087.txt
+88. Accuracy: 98.863636, Detected number: 3, Expected: 03
+Filename:     test_data_0088.txt
+89. Accuracy: 98.876404, Detected number: 6, Expected: 06
+Filename:     test_data_0089.txt
+90. Accuracy: 98.888889, Detected number: 1, Expected: 01
+Filename:     test_data_0090.txt
+91. Accuracy: 98.901099, Detected number: 3, Expected: 03
+Filename:     test_data_0091.txt
+92. Accuracy: 98.913043, Detected number: 6, Expected: 06
+Filename:     test_data_0092.txt
+93. Accuracy: 98.924731, Detected number: 9, Expected: 09
+Filename:     test_data_0093.txt
+94. Accuracy: 98.936170, Detected number: 3, Expected: 03
+Filename:     test_data_0094.txt
+95. Accuracy: 98.947368, Detected number: 1, Expected: 01
+Filename:     test_data_0095.txt
+96. Accuracy: 98.958333, Detected number: 4, Expected: 04
+Filename:     test_data_0096.txt
+97. Accuracy: 98.969072, Detected number: 1, Expected: 01
+Filename:     test_data_0097.txt
+98. Accuracy: 98.979592, Detected number: 7, Expected: 07
+Filename:     test_data_0098.txt
+99. Accuracy: 98.989899, Detected number: 6, Expected: 06
+Filename:     test_data_0099.txt
+100. Accuracy: 99.000000, Detected number: 9, Expected: 09
+Accuracy: 99.000000
+$stop called at time : 873235 ns : File "C:/Network/Vivado/src/fpga/tb/top_sim.v" Line 364
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Mar 24 17:54:54 2026...
